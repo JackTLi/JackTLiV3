@@ -57,8 +57,8 @@ $(function() {
     });
 
     function initHeader() {
-        width = window.innerWidth;
-        height = window.innerHeight;
+        width = $(window).width();
+        height = $(window).height();
         target = {x: width/2, y: height/2};
 
         canvas = document.getElementById('demo-canvas');
