@@ -7,6 +7,55 @@ $(function() {
     initAnimation();
     addListeners();
 
+    
+    $(window).scroll( function(){
+        
+        //Fadein on scroll
+        $('.fadein').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).removeClass('fadein');
+                $(this).addClass('fadedin');
+                    
+            }
+        }); 
+
+        //Slide-in (left) on scroll
+        $('.slidein-left').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).removeClass('slidein-left');
+                $(this).addClass('slidedin-left');
+                    
+            }
+        }); 
+
+        //Slide-in (right) on scroll
+        $('.slidein-right').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).removeClass('slidein-right');
+                $(this).addClass('slidedin-right');
+                    
+            }
+        }); 
+
+
+    
+    });
+
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
