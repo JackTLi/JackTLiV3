@@ -1,0 +1,1 @@
+var jacktli = jacktli || {};

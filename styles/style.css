@@ -1,0 +1,58 @@
+
+
+#jumbotron {
+	background-color: black;
+	background-image: url("../images/header.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+#text-software {
+}
+
+#text-developer {
+	font-weight: bold;
+}
+
+#aboutme {
+	height: 70vh;
+}
+
+#demo-canvas {
+	opacity: 0.85;
+}
+
+/* COMMON*/
+
+.section {
+
+}
+
+.main-title {
+	position:absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+	text-align: center;
+}
+
+.full-vertical {
+	height: 100vh;
+}
+
+.full-horizontal {
+	width: 100vw;
+}
+
+.h3 {
+	font-size: 5vh;
+	letter-spacing: 1vw;
+	opacity: 0.7;
+}
+
+
+/*OVERRIDE*/
+body {
+	margin:0;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
