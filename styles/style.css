@@ -25,6 +25,7 @@
 
 #portrait {
 	display:block;
+	width: 200px;
 }
 
 #timeline {
@@ -65,7 +66,9 @@ tr:first-child td{
 	list-style: none;
 	margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+    padding-left:0;
 }
 
 #projectlist li {
@@ -80,6 +83,17 @@ tr:first-child td{
 #projectlist .year {
 	color: #bbb;
 	float:right;
+}
+
+@media screen and (max-width: 800px) {
+	#projectlist .projlink {
+		float:none;
+		text-align: center;
+	}
+	#projectlist .year {
+		width:100%;
+		display: none;
+	}
 }
 
 
@@ -105,12 +119,15 @@ tr:first-child td{
 
 .sectionContent {
 	width: calc(100% - 100px);
-	max-width: 1000px;
+	max-width: 800px;
 	margin-right:auto;
 	margin-left: auto;
 	text-align: justify;
 	letter-spacing: 1px;
+}
 
+.sectionContent p {
+	line-height: 25px;
 }
 
 .centred {
