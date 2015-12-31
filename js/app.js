@@ -7,6 +7,20 @@ $(function() {
     initAnimation();
     addListeners();
 
+    $(".fancybox").fancybox();
+
+    $(".various").fancybox({
+        maxWidth    : 800,
+        maxHeight   : 600,
+        fitToView   : false,
+        width       : '70%',
+        height      : '70%',
+        autoSize    : false,
+        closeClick  : false,
+        openEffect  : 'none',
+        closeEffect : 'none'
+    });
+
     
     $(window).scroll( function(){
         
@@ -70,14 +84,16 @@ $(function() {
         points = [];
         for(var x = 0; x < width; x = x + width/10) {
             for(var y = 0; y < height; y = y + height/10) {
-                var px = x + Math.random()*width/3;
-                var py = y + Math.random()*height/3;
+                var px = x + Math.random()*width/20;
+                var py = y + Math.random()*height/20;
                 var p = {x: px, originX: px, y: py, originY: py };
                 points.push(p);
             }
         }
 
         // for each point find the 5 closest points
+        var numcpoints = 5;
+
         for(var i = 0; i < points.length; i++) {
             var closest = [];
             var p1 = points[i];
@@ -85,7 +101,7 @@ $(function() {
                 var p2 = points[j]
                 if(!(p1 == p2)) {
                     var placed = false;
-                    for(var k = 0; k < 10; k++) {
+                    for(var k = 0; k < numcpoints; k++) {
                         if(!placed) {
                             if(closest[k] == undefined) {
                                 closest[k] = p2;
@@ -94,7 +110,7 @@ $(function() {
                         }
                     }
 
-                    for(var k = 0; k < 10; k++) {
+                    for(var k = 0; k < numcpoints; k++) {
                         if(!placed) {
                             if(getDistance(p1, p2) < getDistance(p1, closest[k])) {
                                 closest[k] = p2;
