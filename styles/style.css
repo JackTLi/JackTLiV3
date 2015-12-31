@@ -128,6 +128,7 @@ tr:first-child td{
 
 .sectionContent p {
 	line-height: 25px;
+	font-size: 20px;
 }
 
 .centred {
@@ -278,5 +279,6 @@ a:hover {
 body {
 	margin:0;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 1em;
 	overflow-x: hidden;
 }
