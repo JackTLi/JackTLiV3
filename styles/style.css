@@ -128,7 +128,6 @@ tr:first-child td{
 
 .sectionContent p {
 	line-height: 25px;
-	font-size: 20px;
 }
 
 .centred {
@@ -288,4 +287,10 @@ body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 1em;
 	overflow-x: hidden;
+}
+
+@media screen and (max-device-width: 600px) {
+	body {
+		font-size: 12px;
+	}
 }
