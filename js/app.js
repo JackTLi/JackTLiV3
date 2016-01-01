@@ -1,6 +1,6 @@
 $(window).load(function() {
     // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");;
+    $(".se-pre-con").fadeOut(500);;
 });
 
 $(function() {
@@ -80,7 +80,7 @@ $(function() {
         height = $(window).height();
         target = {x: width/2, y: height/2};
 
-        canvas = document.getElementById('demo-canvas');
+        canvas = document.getElementById('constellation-canvas');
         canvas.width = width;
         canvas.height = height;
         ctx = canvas.getContext('2d');
