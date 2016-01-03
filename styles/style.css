@@ -104,6 +104,33 @@ tr:first-child td{
 
 /* COMMON*/
 
+.nav {
+	display:none;
+	position: fixed;
+	z-index: 2;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.nav ul {
+	list-style-type: none;
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	padding-left:0;
+}
+
+.nav ul li {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+    vertical-align: middle;
+}
+
+.nav .home-icon img {
+	height: 50px;
+}
+
 .section {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -199,8 +226,9 @@ h2 {
 	height: 100vh;
 	z-index: 9999;
 	background: url("../images/loading.gif") center no-repeat #fff;
-	background-color: #f8f8f8;
+	background-color: #fff;
 }
+
 
 
 

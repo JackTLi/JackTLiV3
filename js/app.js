@@ -1,6 +1,6 @@
 $(window).load(function() {
     // Animate loader off screen
-    $(".se-pre-con").fadeOut(500);;
+    $(".se-pre-con").fadeOut(400);;
 });
 
 $(function() {
