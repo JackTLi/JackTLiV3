@@ -25,27 +25,29 @@
 <body>
 	<div class="se-pre-con"></div>
 
-	<div class="nav sectionContent full-horizontal">
-		<ul>
-			<li>About</li>
-			<li>Experience</li>
-			<li class="home-icon"><img src="images/logo.png"></li>
-			<li>Projects</li>
-			<li>Experience</li>
-		<ul>
+	<div class="nav">
+		<div class="sectionContent full-horizontal">
+			<ul>
+				<li><a href="#aboutme" class="sliding-link">About</a></li>
+				<li><a href="#experience" class="sliding-link">Experience</a></li>
+				<li class="home-icon"><a href="#jumbotron" class="sliding-link"><img src="images/logo.png"></a></li>
+				<li><a href="#projects" class="sliding-link">Projects</a></li>
+				<li><a href="#interests" class="sliding-link">Interests</a></li>
+			</ul>
+		</div>
 	</div>
 
 <!-- Jumbotron-->
-	<div class="full-vertical full-horizontal" id="jumbotron">
+	<section class="full-vertical full-horizontal" id="jumbotron">
 		<canvas id="constellation-canvas"></canvas>
 		<span class="main-title">
 			<span class="h3" id="text-software">SOFTWARE</span> </br>
 			<span class="h3" id="text-developer">DEVELOPER</span>
 		</span>	
-	</div>
+	</section>
 
 <!-- About me -->
-	<div class="full-horizontal section" id="aboutme">
+	<section class="full-horizontal section" id="aboutme">
 		<div class="fadein sectionContent">
 			<img class="centred" id="portrait" src="images/portrait.png">
 		</div>
@@ -69,10 +71,10 @@
 			</p>
 
 		</div>
-	</div>
+	</section>
 
 <!-- Experience -->
-	<div class="full-horizontal section coloredbg" id="experience">
+	<section class="full-horizontal section coloredbg" id="experience">
 		<div class="sectionContent">
 			<h2> Experience </h2>
 			
@@ -112,10 +114,10 @@
 
 			</table>
 		</div>
-	</div>
+	</section>
 
 <!-- Projects -->
-	<div class="full-horizontal section" id="projects">
+	<section class="full-horizontal section" id="projects">
 		<div class="sectionContent">
 			<h2>Projects</h2>
 
@@ -162,20 +164,29 @@
 				</li>
 			</ul>
 		</div>
+	</section>
+
+<!-- Interests -->
+<section class="full-horizontal section coloredbg" id="interests">
+	<div class="sectionContent">
+	<h2>Interests</h2>
+
+	<p class="text-centred">coming soon</p>
+
 	</div>
+</section>
 
 <!-- Footer -->
-	<div class="full-horizontal footer coloredbg" id="footer">
+	<section class="full-horizontal footer" id="footer">
 		<div class="sectionContent">
-				<div class="text-centred" > &copy; Jack Li 
+				<div class="footer-text" > &copy; JackTLi
 					<span class="floatright"> 
 						<a href="http://lnkd.in/evKJ-r"><img src="images/linkedin.png"> </a>
 						<a href="https://github.com/JackTLi"><img src="images/github.png"> </a>
 					</span>
 				</div>
 		</div>
-	</div>
-
+	</section>
 
   
 </body>
