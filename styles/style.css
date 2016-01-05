@@ -16,7 +16,6 @@
 }
 
 #aboutme {
-
 }
 
 #constellation-canvas {
@@ -56,10 +55,53 @@ tr:first-child td{
 
 #timeline .desc {
 	padding-left: 50px;
+	text-align: left;
 }
 
 #timeline .pos {
 	color: #bbb;
+}
+
+#project-table {
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+}
+
+#project-table tr {
+	height: inherit;
+}
+
+#project-table td {
+	padding-top: 20px;
+}
+
+tr:first-child td{
+	padding-top:0 !important;
+}
+
+#project-table .arrow {
+	padding-left: 100px;
+}
+
+#project-table .year {
+	padding-right: 100px;
+}
+
+#project-table .desc {
+	padding-left: 100px;
+}
+
+@media screen and (max-width: 800px) {
+	#project-table .arrow {
+		padding-left: 35px;
+	}
+	#project-table .year {
+		padding-right:35px;
+	}
+	#project-table .desc {
+		padding-left:35px;
+	}
 }
 
 #projectlist {
@@ -96,6 +138,9 @@ tr:first-child td{
 	}
 }
 
+#interests {
+}
+
 
 
 
@@ -103,6 +148,10 @@ tr:first-child td{
 
 
 /* COMMON*/
+
+.active {
+	color: #aaa;
+}
 
 .nav {
 	width:100%;
@@ -113,7 +162,7 @@ tr:first-child td{
 }
 
 .nav-background {
-	background-color: rgba(240,240,240,0.95);
+	background-color: rgba(255,255,255,0.95);
 	transition: background-color 0.5s;
 }
 
@@ -135,7 +184,7 @@ tr:first-child td{
 	height: 50px;
 }
 
-.section {
+.section-padded {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
@@ -198,15 +247,26 @@ tr:first-child td{
 }
 
 .footer {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	height: 70px;
 	color: #777;
 }
 
 .footer-text {
+	line-height: 70px;
 	font-size: 9px;
 	vertical-align: middle;
 }
+
+.footer-icons {
+	line-height:70px;
+	vertical-align: middle;
+}
+
+
+.footer-icons img {
+	display:inline-block;
+}
+
 
 h2 {
 	margin:0;

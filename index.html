@@ -14,6 +14,7 @@
   <script src="js/EasePack.min.js"></script>
   <script src="js/rAF.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/constellation.js"></script>
 
   <link rel="stylesheet" href="styles/jquery.fancybox.css" type="text/css"/>
   <script src="js/jquery.fancybox.pack.js"></script>
@@ -36,9 +37,8 @@
 			</ul>
 		</div>
 	</div>
-
 <!-- Jumbotron-->
-	<section class="full-vertical full-horizontal" id="jumbotron">
+	<section class="full-vertical section full-horizontal" id="jumbotron">
 		<canvas id="constellation-canvas"></canvas>
 		<span class="main-title">
 			<span class="h3" id="text-software">SOFTWARE</span> </br>
@@ -47,7 +47,7 @@
 	</section>
 
 <!-- About me -->
-	<section class="full-horizontal section" id="aboutme">
+	<section class="full-horizontal section section-padded" id="aboutme">
 		<div class="fadein sectionContent">
 			<img class="centred" id="portrait" src="images/portrait.png">
 		</div>
@@ -74,7 +74,7 @@
 	</section>
 
 <!-- Experience -->
-	<section class="full-horizontal section coloredbg" id="experience">
+	<section class="full-horizontal section section-padded coloredbg" id="experience">
 		<div class="sectionContent">
 			<h2> Experience </h2>
 			
@@ -116,8 +116,92 @@
 		</div>
 	</section>
 
+<!-- Projects<exp> -->
+	<section class="full-horizontal section section-padded" id="projects">
+		<div class="sectionContent">
+			<h2> Projects </h2>
+			
+			<table id="project-table" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="year fadein slidein-left" > 2015 </td>
+					<td class="logo fadein"> <img src="images/projects/election_icon.png"></td>
+					<td class="desc fadein slidein-right"> 
+						Election Simulation
+					</td>
+					<td class="arrow fadein slidein-right">
+						<a class="various" data-fancybox-type="iframe" href="projects/comingsoon.html">
+							<img style="width: 20px" src="images/arrowright.png">
+						</a>
+					</td>
+				</tr>
+				<tr>
+
+					<td class="year fadein slidein-left" > 2015 </td>
+					<td class="logo fadein"> <img src="images/projects/rubycheung_icon.png"></td>
+					<td class="desc fadein slidein-right"> 
+						Ruby Cheung Portfolio Site
+					</td>
+					<td class="arrow fadein slidein-right">
+						<a class="various" data-fancybox-type="iframe" href="projects/comingsoon.html">
+							<img style="width: 20px" src="images/arrowright.png">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="year fadein slidein-left" > 2015 </td>
+					<td class="logo fadein"> <img src="images/projects/brickbreaker_icon.png"></td>
+					<td class="desc fadein slidein-right"> 
+						BrickBreaker Game
+					</td>
+					<td class="arrow fadein slidein-right">
+						<a class="various" data-fancybox-type="iframe" href="projects/comingsoon.html">
+							<img style="width: 20px" src="images/arrowright.png">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="year fadein slidein-left" > 2014 </td>
+					<td class="logo fadein"> <img src="images/projects/mkmtx_icon.png"></td>
+					<td class="desc fadein slidein-right"> 
+						Markham Tax View
+					</td>
+					<td class="arrow fadein slidein-right">
+						<a class="various" data-fancybox-type="iframe" href="projects/comingsoon.html">
+							<img style="width: 20px" src="images/arrowright.png">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="year fadein slidein-left" > 2014 </td>
+					<td class="logo fadein"> <img src="images/projects/quadris_icon.png"></td>
+					<td class="desc fadein slidein-right"> 
+						Quadris Game
+					</td>
+					<td class="arrow fadein slidein-right">
+						<a class="various" data-fancybox-type="iframe" href="projects/quadris.html">
+							<img style="width: 20px" src="images/arrowright.png">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="year fadein slidein-left" > 2012 </td>
+					<td class="logo fadein"> <img src="images/projects/winescores_icon.png"></td>
+					<td class="desc fadein slidein-right"> 
+						WineScores Site
+					</td>
+					<td class="arrow fadein slidein-right">
+						<a class="various" data-fancybox-type="iframe" href="projects/comingsoon.html">
+							<img style="width: 20px" src="images/arrowright.png">
+						</a>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</section>
+
 <!-- Projects -->
-	<section class="full-horizontal section" id="projects">
+	<!-- <section class="full-horizontal section section-padded" id="projects">
 		<div class="sectionContent">
 			<h2>Projects</h2>
 
@@ -165,9 +249,9 @@
 			</ul>
 		</div>
 	</section>
-
+ -->
 <!-- Interests -->
-<section class="full-horizontal section coloredbg" id="interests">
+<section class="full-horizontal section section-padded coloredbg" id="interests">
 	<div class="sectionContent">
 	<h2>Interests</h2>
 
@@ -179,11 +263,10 @@
 <!-- Footer -->
 	<section class="full-horizontal footer" id="footer">
 		<div class="sectionContent">
-				<div class="footer-text" > &copy; JackTLi
-					<span class="floatright"> 
-						<a href="http://lnkd.in/evKJ-r"><img src="images/linkedin.png"> </a>
-						<a href="https://github.com/JackTLi"><img src="images/github.png"> </a>
-					</span>
+				<div class="footer-text floatleft" > &copy; JackTLi </div>
+				<div class="footer-icons floatright"> 
+					<a href="http://lnkd.in/evKJ-r"><img src="images/linkedin.png"> </a>
+					<a href="https://github.com/JackTLi"><img src="images/github.png"> </a>
 				</div>
 		</div>
 	</section>
