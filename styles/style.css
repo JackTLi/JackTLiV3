@@ -159,10 +159,11 @@ tr:first-child td{
 	z-index: 2;
 	left: 50%;
 	transform: translateX(-50%);
+	font-size: 12px;
 }
 
 .nav-background {
-	background-color: rgba(255,255,255,0.95);
+	background-color: #fff;
 	transition: background-color 0.5s;
 }
 
