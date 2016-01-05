@@ -81,7 +81,7 @@ tr:first-child td{
 }
 
 #project-table .arrow {
-	padding-left: 100px;
+	padding-left: 50px;
 }
 
 #project-table .year {
@@ -248,7 +248,6 @@ tr:first-child td{
 
 .footer {
 	height: 70px;
-	color: #777;
 }
 
 .footer-text {
