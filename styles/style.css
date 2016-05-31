@@ -104,6 +104,7 @@ tr:first-child td{
 	}
 }
 
+/* PROJECTS */
 #projectlist {
 	list-style: none;
 	margin-left: auto;
@@ -136,6 +137,18 @@ tr:first-child td{
 		width:100%;
 		display: none;
 	}
+}
+
+.projects-list {
+	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 600px;
+}
+
+.projects-list .projects-container {
+
 }
 
 #interests {
